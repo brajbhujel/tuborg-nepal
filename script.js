@@ -28,19 +28,19 @@ tl.to("#page1_ice ", {
   },
 });
 
-// tl.to("#page1_leaf ", {
-//   top: "100%",
-//   left: "15%",
-//   rotate: 5,
-//   ease: "power1.inOut",
-//   scrollTrigger: {
-//     trigger: "#page2",
-//     start: "0% 100%",
-//     end: "20% 50%",
-//     scrub: 2,
-//     markers: true,
-//   },
-// });
+tl.to("#page1_leaf ", {
+  top: "100%",
+  left: "15%",
+  rotate: 5,
+  ease: "power1.inOut",
+  scrollTrigger: {
+    trigger: "#page2",
+    start: "0% 100%",
+    end: "20% 50%",
+    scrub: 2,
+    markers: true,
+  },
+});
 
 tl.to("#page1_leaf2 ", {
   top: "160%",
