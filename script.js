@@ -32,7 +32,6 @@ tl.to("#page1_leaf ", {
   top: "100%",
   left: "15%",
   rotate: 5,
-  ease: "power1.inOut",
   scrollTrigger: {
     trigger: "#page2",
     start: "0% 100%",
@@ -50,6 +49,33 @@ tl.to("#page1_leaf2 ", {
   scrollTrigger: {
     trigger: "#page2",
     start: "0% 100%",
+    end: "50% 50%",
+    scrub: 2,
+    markers: true,
+  },
+});
+
+tl.to("#bottle ", {
+  top: "110%",
+  left: "30%",
+  rotate: -60,
+  scale: 1.2,
+  scrollTrigger: {
+    trigger: "#page3",
+    start: "5% 100%",
+    end: "50% 50%",
+    scrub: 2,
+    markers: true,
+  },
+});
+
+tl.to("#page1_leaf ", {
+  top: "235%",
+  left: "50%",
+  rotate: 110,
+  scrollTrigger: {
+    trigger: "#page3",
+    start: "5% 100%",
     end: "50% 50%",
     scrub: 2,
     markers: true,
