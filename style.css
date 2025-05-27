@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +9,25 @@ body {
   width: 100%;
   height: 100%;
 }
-#main {
-  width: 100vw;
-  min-height: 100vh;
-  overflow-y: hidden !important;
-  scroll-behavior: smooth;
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(142, 212, 95, 0.8) 0%,
+    rgba(48, 196, 3, 0.849) 100%
+  );
 }
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 ::-webkit-scrollbar {
   display: none;
   overflow-x: hidden;
@@ -32,42 +44,25 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: transparent;
 }
 #nav_top > img {
   height: 140px;
   width: auto;
 }
 
-#nav_top > button {
-  padding: 7px 16px;
-  font-family: "druk heavy";
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 800;
-  line-height: 24px;
-  color: #fff;
-  white-space: nowrap;
-  background-color: rgb(59, 214, 11);
-  border-style: none;
-  cursor: pointer;
-}
-
 #nav_top > i {
-  font-size: 2.5vw;
-  display: none;
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
 }
 
 /* Bottle Image */
 
 #bottle {
   position: absolute;
-  height: 95vh;
-  top: 0%;
-  left: 43%;
+  width: 18vw;
   z-index: 99;
-}
-#bottlecopy {
-  display: none;
+  top: -1%;
 }
 
 /* Page1 Css */
@@ -81,22 +76,48 @@ body {
   position: relative;
 }
 #page1 h1 {
-  width: 60vw;
-  color: rgb(59, 214, 11);
-  font-family: "Antom", sans-serif;
+  font-size: 100vw;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
   font-size: 13vw;
   font-weight: 900;
   text-align: center;
-  word-spacing: -1.5vw;
+  letter-spacing: 1.5vw;
   text-transform: uppercase;
   line-height: 12vw;
+  z-index: 9;
 }
 #page1_capsule {
-  height: 15vh;
+  height: 14vh;
   position: absolute;
-  top: 17%;
-  left: 34.5%;
-  transform: rotate(-30deg);
+  top: 28%;
+  left: 31%;
+}
+
+#page1_leaf {
+  position: absolute;
+  width: 20vw;
+  top: 25%;
+  right: 6%;
+  transform: rotate(100deg);
+  z-index: 10;
+}
+
+#page1_leaf2 {
+  position: absolute;
+  width: 45vw;
+  transform: rotate(35deg);
+  top: 5%;
+  left: -10%;
+}
+
+#page1_ice {
+  position: absolute;
+  width: 30vw;
+  right: 30%;
+  top: 2%;
+  z-index: 10;
+  transform: rotate(95deg);
 }
 
 /* Page 2 Css */
@@ -205,8 +226,15 @@ body {
 
 #page3 {
   width: 100vw;
-  height: 110vh;
-  padding: 0 5vmax 0 10vmax;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    120deg,
+    rgba(142, 212, 95, 0.8) 0%,
+    rgba(48, 196, 3, 0.849) 100%
+  );
 }
 
 #page3 h1 {
@@ -214,49 +242,7 @@ body {
   font-weight: 500;
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
-  color: rgb(177, 29, 29);
-}
-#page3_text {
-  display: flex;
-  justify-content: space-between;
-}
-#page3_text_part1 a img {
-  width: 25vw;
-  margin-top: 3vh;
-}
-#page3_text_part1 h5 {
-  width: 23vw;
-  font-size: 2vw;
-  margin-top: 3vh;
-  line-height: 4vh;
-  font-family: "Poppins", sans-serif;
-}
-
-#page3_text_part2 {
-  width: 30vw;
-  padding: 1vmax 2vmax;
-}
-#page3_text_part2 h5 {
-  width: 25vw;
-  font-size: 1vmax;
-  font-family: "Dosis", sans-serif;
-  font-weight: 100;
-}
-#page3_text_part2 h2 {
-  margin-top: 2vmax;
-  font-family: "Anton", sans-serif;
-  font-size: 1.5vmax;
-  font-weight: 100;
-  letter-spacing: 0.05vmax;
-}
-#page3_text_part2 p {
-  margin-top: 3vh;
-  font-family: "Dosis", sans-serif;
-  font-weight: 100;
-}
-
-.main {
-  display: none;
+  color: rgb(30, 102, 8);
 }
 
 /* Page 5 css */
