@@ -10,7 +10,6 @@ tl.to("#bottle ", {
     start: "0% 100%",
     end: "20% 50%",
     scrub: 2,
-    markers: true,
   },
 });
 
@@ -24,22 +23,21 @@ tl.to("#page1_ice ", {
     start: "0% 100%",
     end: "20% 50%",
     scrub: 2,
-    markers: true,
   },
 });
 
-tl.to("#page1_leaf ", {
-  top: "100%",
-  left: "15%",
-  rotate: 5,
-  scrollTrigger: {
-    trigger: "#page2",
-    start: "0% 100%",
-    end: "20% 50%",
-    scrub: 2,
-    markers: true,
-  },
-});
+// tl.to("#page1_leaf ", {
+//   top: "100%",
+//   left: "15%",
+//   rotate: 5,
+//   scrollTrigger: {
+//     trigger: "#page2",
+//     start: "0% 100%",
+//     end: "20% 50%",
+//     scrub: 2,
+//
+//   },
+// });
 
 tl.to("#page1_leaf2 ", {
   top: "160%",
@@ -51,7 +49,6 @@ tl.to("#page1_leaf2 ", {
     start: "0% 100%",
     end: "50% 50%",
     scrub: 2,
-    markers: true,
   },
 });
 
@@ -65,7 +62,6 @@ tl.to("#bottle ", {
     start: "5% 100%",
     end: "50% 50%",
     scrub: 2,
-    markers: true,
   },
 });
 
@@ -78,6 +74,17 @@ tl.to("#page1_leaf ", {
     start: "5% 100%",
     end: "50% 50%",
     scrub: 2,
-    markers: true,
+  },
+});
+
+gsap.to("#page6 h1", {
+  transform: "translateX(-150%)",
+  scrollTrigger: {
+    trigger: "#page6",
+    start: "top 0%",
+    end: "top -200%",
+    scrub: 2,
+
+    pin: true,
   },
 });
