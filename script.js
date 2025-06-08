@@ -56,7 +56,7 @@ tl.to("#bottle ", {
   top: "110%",
   left: "30%",
   rotate: -60,
-  scale: 1.2,
+  scale: 1.25,
   scrollTrigger: {
     trigger: "#page3",
     start: "5% 100%",
